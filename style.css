@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    padding: 10px;
+    background-color: lightseagreen;
+}
+
+.title {
+    color: black;
+    text-align: center;
+    font-size: 55px;
+    margin-top: 2%;
+    margin-bottom: 1rem;
+}
+
+
+#board {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 600px;
+    color: black;
+    padding-bottom: 10rem;
+    
+}
+
+.tile {
+    border: 20px solid black;
+    color:10 px rgb(3, 3, 3); 
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    font-size: 40px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* #show-winner-section {
+    text-align: center;
+    border: 8px solid black;
+    padding: 5px;
+    width: 50%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 10px auto;
+} */
+
+
+h2 {
+    color: black;
+    display: inline-block;
+    margin: 0 auto;
+    display: grid;
+    
+
+    
+}
+
+.Reset {
+    background-color: black;
+    color: floralwhite;
+    padding: 4px;
+    border-radius: 2px;
+    font-size: 20px;
+    margin: auto;
+    cursor: pointer;
+ 
+}
+
+.x-hover:hover::after {
+    content: "X";
+    opacity: 0.3;
+}
+.o-hover:hover::after {
+    content: "O";
+    opacity: 0.3;
+}
